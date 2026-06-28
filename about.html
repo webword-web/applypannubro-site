@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About – Apply Pannu Bro</title>
+    <meta name="description" content="Learn about Apply Pannu Bro, its mission, vision, and the skilled team behind the SaaS platform." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="language.js" defer></script>
+</head>
+<body>
+    <!-- Header (reused) -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Apply Pannu Bro</a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin Login</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <select id="language-select" aria-label="Language selector">
+                    <option value="en">English</option>
+                    <option value="ta">தமிழ்</option>
+                </select>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon"></i></button>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 data-key="aboutTitle">About Apply Pannu Bro</h1>
+            <p data-key="aboutIntro">A premium SaaS platform delivering seamless services for businesses of all sizes.</p>
+        </section>
+        <section class="section">
+            <h2 data-key="companyInfo">Company Information</h2>
+            <ul class="info-list">
+                <li><strong data-key="companyName">Company:</strong> Apply Pannu Bro</li>
+                <li><strong data-key="ceoName">CEO:</strong> Dhanush</li>
+                <li><strong data-key="qualification">Qualification:</strong> Bachelor of Computer Applications (BCA)</li>
+                <li><strong data-key="mission">Mission:</strong> <span data-key="missionText">Empower businesses with intuitive, efficient, and scalable service solutions.</span></li>
+                <li><strong data-key="vision">Vision:</strong> <span data-key="visionText">Become the go‑to platform for hassle‑free service automation worldwide.</span></li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2 data-key="skillsHeading">Core Skills & Technologies</h2>
+            <div class="skills-grid">
+                <span>Python</span>
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Cloud Computing</span>
+                <span>Artificial Intelligence</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Apply Pannu Bro</h3>
+                <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="index.html" class="footer-link" data-key="navHome">Home</a></li>
+                    <li><a href="services.html" class="footer-link" data-key="navServices">Services</a></li>
+                    <li><a href="about.html" class="footer-link" data-key="navAbout">About</a></li>
+                    <li><a href="feedback.html" class="footer-link" data-key="navFeedback">Feedback</a></li>
+                    <li><a href="contact.html" class="footer-link" data-key="navContact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <button id="scroll-top" class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="language.js"></script>
+</body>
+</html>

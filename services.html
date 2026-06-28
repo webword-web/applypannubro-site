@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Apply Pannu Bro</title>
+  <meta name="description" content="Explore our services portfolio." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <!-- Navigation (reuse) -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Apply Pannu Bro</a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="admin.html" class="nav-link">Admin Login</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <select id="language-select" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="ta">தமிழ்</option>
+        </select>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon"></i></button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 data-key="servicesPageTitle" class="page-title">Our Services</h1>
+    <div class="cards-container" id="services-cards">
+      <!-- Service cards will be injected by script.js -->
+    </div>
+  </main>
+
+  <!-- Service Selection Modal -->
+  <div id="service-modal" class="modal hidden glass">
+    <div class="modal-content">
+      <h2 data-key="selectServiceType">Select Service Type</h2>
+      <label><input type="radio" name="service-type" value="new" checked /> <span data-key="newService">New</span></label><br/>
+      <label><input type="radio" name="service-type" value="correction" /> <span data-key="correctionService">Correction</span></label>
+      <div id="correction-details" class="hidden">
+        <textarea id="correction-text" placeholder="Enter correction details..." rows="4"></textarea>
+      </div>
+      <button id="service-continue" class="btn btn-primary" data-key="continueBtn">Continue</button>
+      <button id="service-cancel" class="btn btn-secondary" data-key="cancelBtn">Cancel</button>
+    </div>
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Apply Pannu Bro</h3>
+        <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="index.html" class="footer-link" data-key="navHome">Home</a></li>
+          <li><a href="services.html" class="footer-link" data-key="navServices">Services</a></li>
+          <li><a href="about.html" class="footer-link" data-key="navAbout">About</a></li>
+          <li><a href="feedback.html" class="footer-link" data-key="navFeedback">Feedback</a></li>
+          <li><a href="contact.html" class="footer-link" data-key="navContact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="language.js"></script>
+</body>
+</html>

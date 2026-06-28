@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login – Apply Pannu Bro</title>
+  <meta name="description" content="Admin login for Apply Pannu Bro platform." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <header class="sticky-header glass">
+    <div class="container flex-between">
+      <div class="logo">Apply Pannu Bro</div>
+      <nav class="nav-menu">
+        <a href="index.html" data-key="navHome">Home</a>
+        <a href="services.html" data-key="navServices">Services</a>
+        <a href="about.html" data-key="navAbout">About</a>
+        <a href="feedback.html" data-key="navFeedback">Feedback</a>
+        <a href="contact.html" data-key="navContact">Contact</a>
+        <a href="admin.html" class="active" data-key="navAdmin">Admin Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="admin-login-section glass">
+      <h1 data-key="adminLoginTitle">Admin Login</h1>
+      <form id="admin-login-form" class="admin-login-form">
+        <div class="form-group">
+          <label for="username" data-key="usernameLabel">Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password" data-key="passwordLabel">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit" class="btn btn-primary" data-key="loginBtn">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <p>&copy; <span id="current-year"></span> Apply Pannu Bro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

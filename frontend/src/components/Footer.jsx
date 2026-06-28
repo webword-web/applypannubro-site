@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -17,12 +17,7 @@ const Footer = () => {
             <p className="mb-4 text-slate-400 max-w-sm">
               {t('hero_subtitle')}
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-white transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-white transition-colors"><Twitter size={20} /></a>
-              <a href="#" className="hover:text-white transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-white transition-colors"><Linkedin size={20} /></a>
-            </div>
+
           </div>
 
           {/* Quick Links */}

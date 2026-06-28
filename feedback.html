@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback – Apply Pannu Bro</title>
+    <meta name="description" content="Submit your feedback and view approved customer reviews." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="language.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Apply Pannu Bro</a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin Login</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <select id="language-select" aria-label="Language selector">
+                    <option value="en">English</option>
+                    <option value="ta">தமிழ்</option>
+                </select>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon"></i></button>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 data-key="feedbackTitle">Customer Feedback</h1>
+            <form id="feedback-form" class="feedback-form glass">
+                <div class="form-group">
+                    <label for="name" data-key="feedbackNameLabel">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone" data-key="feedbackPhoneLabel">Phone</label>
+                    <input type="tel" id="phone" name="phone" required />
+                </div>
+                <div class="form-group">
+                    <label for="rating" data-key="feedbackRatingLabel">Rating</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Good</option>
+                        <option value="3">3 - Average</option>
+                        <option value="2">2 - Poor</option>
+                        <option value="1">1 - Very Poor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-key="feedbackMessageLabel">Feedback</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-key="submitFeedbackBtn">Submit</button>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2 data-key="approvedFeedbackHeading">Approved Feedback</h2>
+            <div id="approved-feedback" class="feedback-list">
+                <!-- Approved feedback will be injected by script.js on page load (same logic as home page) -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Apply Pannu Bro</h3>
+                <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="index.html" class="footer-link" data-key="navHome">Home</a></li>
+                    <li><a href="services.html" class="footer-link" data-key="navServices">Services</a></li>
+                    <li><a href="about.html" class="footer-link" data-key="navAbout">About</a></li>
+                    <li><a href="feedback.html" class="footer-link" data-key="navFeedback">Feedback</a></li>
+                    <li><a href="contact.html" class="footer-link" data-key="navContact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <button id="scroll-top" class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="language.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply Pannu Bro</title>
+  <meta name="description" content="Premium SaaS platform offering services and solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Apply Pannu Bro</a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="admin.html" class="nav-link">Admin Login</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <select id="language-select" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="ta">தமிழ்</option>
+        </select>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon"></i></button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 data-key="heroTitle">Empower Your Business with Seamless Services</h1>
+      <p data-key="heroSubtitle">Professional SaaS solutions tailored for your needs.</p>
+      <a href="services.html" class="btn btn-primary" data-key="ctaButton">Explore Services</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.jpg" alt="Hero Image" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- Company Intro -->
+  <section class="intro" id="intro">
+    <h2 data-key="introTitle">Why Choose Apply Pannu Bro?</h2>
+    <p data-key="introText">We combine expertise, cutting‑edge technology, and a customer‑first mindset to deliver outstanding results.</p>
+    <div class="stats">
+      <div class="stat-card">
+        <h3>10+</h3>
+        <p data-key="statYears">Years of Experience</p>
+      </div>
+      <div class="stat-card">
+        <h3>500+</h3>
+        <p data-key="statClients">Satisfied Clients</p>
+      </div>
+      <div class="stat-card">
+        <h3>100%</h3>
+        <p data-key="statSatisfaction">Customer Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Services (placeholder) -->
+  <section class="services-preview" id="services-preview">
+    <h2 data-key="popularServices">Popular Services</h2>
+    <div class="cards-container" id="services-cards">
+      <!-- Cards will be injected via script.js -->
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta" id="cta">
+    <h2 data-key="ctaTitle">Ready to Transform Your Business?</h2>
+    <a href="contact.html" class="btn btn-secondary" data-key="contactUs">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Apply Pannu Bro</h3>
+        <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="index.html" class="footer-link" data-key="navHome">Home</a></li>
+          <li><a href="services.html" class="footer-link" data-key="navServices">Services</a></li>
+          <li><a href="about.html" class="footer-link" data-key="navAbout">About</a></li>
+          <li><a href="feedback.html" class="footer-link" data-key="navFeedback">Feedback</a></li>
+          <li><a href="contact.html" class="footer-link" data-key="navContact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="language.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "svc1",
+    "name": "Website Development",
+    "description": "Professional responsive website built with modern standards.",
+    "price": 1499,
+    "image": "images/service1.png"
+  },
+  {
+    "id": "svc2",
+    "name": "Mobile App Development",
+    "description": "Cross‑platform mobile app (iOS & Android) using React Native.",
+    "price": 2999,
+    "image": "images/service2.png"
+  },
+  {
+    "id": "svc3",
+    "name": "SEO Optimization",
+    "description": "Improve search engine rankings and organic traffic.",
+    "price": 799,
+    "image": "images/service3.png"
+  },
+  {
+    "id": "svc4",
+    "name": "UI/UX Design",
+    "description": "User‑centered design for web and mobile interfaces.",
+    "price": 1199,
+    "image": "images/service4.png"
+  }
+]
